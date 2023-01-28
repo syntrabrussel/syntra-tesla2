@@ -3,14 +3,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   font-size: 1.6rem;
+  line-height: 2.2rem;
 }
-
 .container {
   background-color: white;
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
   padding: 48px 70px 27px 70px;
+  transition: all 400ms;
 }
 header {
   padding-bottom: 33px;
@@ -29,9 +30,54 @@ main img {
   height: auto;
   display: block;
 }
-
 main p {
-  line-height: 2.2rem;
   border-bottom: 1px solid black;
   padding: 14px;
+}
+ul {
+  line-height: 3rem;
+  padding: 18px 42px 14px 16px;
+}
+ul li {
+  background-image: url("../images/bg_listitem.jpg");
+  background-repeat: no-repeat;
+  padding-left: 2.6rem;
+  background-position: 0px 4px;
+}
+footer {
+  border-top: 1px solid black;
+  text-align: center;
+  padding-top: 26px;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 12px;
+  }
+  header {
+    padding-bottom: 12px;
+  }
+  header h1,
+  header h2 {
+    text-align: center;
+  }
+  main p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  main ul {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  :root {
+    font-size: 75%;
+  }
 }
